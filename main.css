@@ -1,0 +1,370 @@
+body {
+    width: 70vw;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('wallpaperSea.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header,
+main {
+    background-color: white;
+    box-shadow: 3px 3px 30px rgb(107, 220, 255);
+    border: 0.1rem solid black;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    width: 25rem;
+    height: 25rem;
+}
+
+/* nav bar START */
+
+.navigation-bar {
+    border-left: none;
+    border-right: none;
+}
+
+.search-bar {
+    border: 0.1rem solid black;
+    width: 7.5rem;
+    height: 1.8rem;
+    font-size: 1rem;
+}
+
+button {
+    width: 4em;
+    height: 2.4em;
+    float: right;
+    border: 1px solid black;
+    border-left: none;
+}
+
+button:hover {
+    background-color: #1B98E0;
+    box-shadow: 3px 3px 4px rgb(165, 165, 165);
+}
+
+nav>ul {
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    text-align: center;
+    border: 0.1rem solid black
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 0.9em;
+}
+
+ul.navigation-bar li a {
+    padding: 1.5em 1.5em;
+    display: block;
+    color: black;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    margin: auto;
+}
+
+ul li ul.dropdown {
+    background-color: rgb(180, 219, 255);
+    position: absolute;
+    display: none;
+    padding: 0.6rem;
+    text-align: center;
+    z-index: 1;
+}
+
+ul li a:hover {
+    background-color: rgb(136, 197, 223);
+    text-decoration: underline;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+    border: 0.1rem solid black;
+}
+
+/* nav bar END */
+
+h1 {
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 3.5rem;
+}
+
+/* slide show images styling START */
+
+.slide-show-container {
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    z-index: 0;
+}
+
+.slide-show-wrap {
+    display: flex;
+    width: 100%;
+    animation: slide 35s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-200%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    70% {
+        transform: translateX(-300%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    90% {
+        transform: translateX(-400%);
+    }
+
+    95% {
+        transform: translateX(-400%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide-show-container img {
+    width: 50%;
+}
+
+/* Slide show images styling END */
+
+/* section styling START */
+
+.container-article-aside {
+    width: 100%;
+    overflow: auto;
+}
+
+.container-article {
+    width: 70%;
+    float: left;
+    text-align: center;
+    margin: 1.5rem;
+    padding: 0.7rem;
+}
+
+.container-aside {
+    width: 21%;
+    float: left;
+    border: 0.1rem solid rgb(0, 0, 0);
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#sale {
+    font-size: xx-large;
+    background: linear-gradient(to right,
+            yellow,
+            orange,
+            pink);
+    background-size: 400% 400%;
+    animation: gradient 5s ease-in infinite;
+    border-radius: 0.6rem;
+}
+
+s {
+    font-family: monospace;
+}
+
+.aside-list li a {
+    text-decoration: none;
+}
+
+.aside-list li a:hover {
+    background-color: aqua;
+}
+
+
+.aside-list>li {
+    margin: 1.2rem;
+    font-size: large;
+    text-align: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.faqs {
+    border: 0.1rem solid black;
+    margin: 1.5rem;
+    padding: 2rem;
+}
+
+details {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: start;
+}
+
+table,
+th,
+td {
+    border: 0.1rem solid black;
+    background-color: white;
+    border-spacing: 0.2rem;
+    margin: auto;
+    margin-bottom: 3.1rem;
+}
+
+th,
+td {
+    padding: 1rem;
+}
+
+caption {
+    font-size: 1.8rem;
+    margin: 0.6rem;
+}
+
+.wrapper {
+    max-width: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.box {
+    margin: 0.6rem;
+    padding: 2.8rem;
+}
+
+/* section styling END */
+
+footer {
+    text-align: center;
+    width: 99.9%;
+    background-color: #1B98E0;
+    border: 0.1rem solid black;
+}
+
+.footer-socials {
+    margin: 2.1rem;
+}
+
+.footer-socials li a {
+    text-decoration: none;
+    margin-left: 1.25rem;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+.footer-socials li:hover a {
+    background-color: rgb(172, 192, 247);
+    color: black;
+    text-decoration: none;
+}
+
+/* media query */
+
+/* phones? */
+@media screen and (max-width: 425px) {
+    body {
+        width: auto;
+    }
+
+    header,
+    main,
+    footer {
+        width: 32rem;
+    }
+
+    .wrapper {
+        display: inline;
+    }
+
+    table,
+    tr,
+    th {
+        padding: 1px;
+        margin: 1px;
+    }
+}
+
+/* tablets */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        display: inline;
+    }
+
+    table,
+    tr,
+    th {
+        margin: auto;
+    }
+}
+
+/*laptop and desktop */
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        display: inline;
+    }
+}
+
+/* large laptops + desktops */
+@media screen and (max-width: 1440px) {
+    .container-aside {
+        width: 90%;
+    }
+
+    .container-article {
+        width: 90%;
+    }
+}
