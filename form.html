@@ -70,28 +70,41 @@
                 <legend>Register Information</legend>
 
                 <label for="fName">First Name:</label>
-                <input type="text" id="fName" name="fName"><br><br>
+                <input type="text" id="fName" name="firstName" required><br><br>
 
-                <label for="lName">Last Name:</label>
-                <input type="text" id="lName" name="lName"><br><br>
+                <label for="lName" >Last Name:</label>
+                <input type="text" id="lName" name="lastName" required><br><br>
 
                 <label for="eMail">Email:</label>
-                <input type="email" id="eMail" name="eMail"><br><br>
+                <input type="email" id="eMail" name="eMail" required><br><br>
 
                 <label for="pWord">Password:</label>
-                <input type="Password" id="pWord" name="pWord" minlength="8"><br><br>
+                <input 
+                type="Password" 
+                id="pWord" 
+                name="passWord"
+                pattern="[A-Za-z\d\.]{6,12}" 
+                required
+                minlength="6"
+                title="Must contain atleast 1 A-Z, a-z, number and a period (.)">
+                <br><br>
 
                 <label for="pWord">Confirm Password:</label>
-                <input type="Password" id="CpWord" name="pWord" minlength="8"><br><br>
+                <input 
+                type="Password" 
+                id="CpWord" 
+                name="pWord"
+                required
+                minlength="6"
+                pattern="[A-Za-z\d\.]{6,12}"
+                title="Must contain atleast 1 A-Z, a-z, number and a period (.)">
+                <br><br>
 
                 <label for="bDay">Birth Date:</label>
-                <input type="date" id="bDay" name="bDay"><br><br>
+                <input type="date" id="bDay" name="birthDay" required><br><br>
 
                 <label for="number">Telephone</label>
-                <input type="number" id="number" name="number"><br><br>
-
-                <input type="Submit" form="myForm">
-                <label></label>
+                <input type="number" id="number" name="number" required><br><br>
             </fieldset>
 
             <fieldset>
@@ -118,7 +131,7 @@
                 <input type="checkbox" name="Instagram" id="Instagram" value="Instagram">
                 <label for="Instagram">Instagram</label><br>
                 <input type="checkbox" name="Youtube" id="Youtube" value="Youtube">
-                <label for="Youtube">Youtube</label><br> 
+                <label for="Youtube">Youtube</label><br><br>
 
                 <input type="submit" form="myForm">
             </fieldset>
